@@ -1,0 +1,24 @@
+{
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-new-object": "error",
+    "no-use-before-define": "error",
+    "array-callback-return": "error",
+    "no-duplicate-imports": "error",
+    "default-case-last": "error",
+    "no-return-assign": "error",
+    "no-unused-vars": "off"
+  },
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "jest": true
+  }
+}
