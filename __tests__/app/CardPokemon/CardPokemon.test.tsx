@@ -1,4 +1,4 @@
-import CardPokemon from "../../../src/components/CardPokemon"
+import CardPokemon from "../../../src/components/molecules/CardPokemon"
 import { render } from "@testing-library/react";
 import { mockPokemon } from "../../__mocks__/mockData";
 

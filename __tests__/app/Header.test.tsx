@@ -1,4 +1,4 @@
-import Header from "../../src/components/Header"
+import Header from "../../src/components/organism/Header"
 import { render } from "@testing-library/react";
 
 describe("Header", () => {

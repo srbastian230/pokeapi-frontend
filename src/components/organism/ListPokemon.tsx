@@ -2,8 +2,8 @@
 
 import { PokemonContext } from "@/providers/PokemonContext";
 import { useContext } from "react";
-import Loader from "@components/Loader";
-import CardPokemon from "@components/CardPokemon";
+import Loader from "@/components/atoms/Loader";
+import CardPokemon from "@/components/molecules/CardPokemon";
 
 export const PokemonList = () => {
   const { allPokemons, loading } = useContext(PokemonContext);

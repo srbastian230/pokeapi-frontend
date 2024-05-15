@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import PokemonDetailTemplate from '@/templates/PokemonDetailTemplate';
+import PokemonDetailTemplate from '@/components/templates/PokemonDetailTemplate';
 
 interface Props {
   params: { slug: string };

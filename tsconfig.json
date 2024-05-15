@@ -28,20 +28,23 @@
       "@providers/*": [
         "./providers/*"
       ],
-      "@hook/*": [
-        "./hook/*"
-      ],
       "@config/*": [
         "./config/*"
       ],
       "@constants/*": [
         "./constants/*"
       ],
-      "@templates/*": [
-        "./templates/*"
+      "@atoms/*": [
+        "./components/atoms/*"
       ],
-      "@components/*": [
-        "./components/*"
+      "@molecules/*": [
+        "./components/molecules/*"
+      ],
+      "@organisms/*": [
+        "./components/organisms/*"
+      ],
+      "@templates/*": [
+        "./components/templates/*"
       ],
     }
   },

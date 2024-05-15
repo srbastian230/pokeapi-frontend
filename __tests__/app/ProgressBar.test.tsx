@@ -1,4 +1,4 @@
-import ProgressBar from "../../src/components/ProgressBar"
+import ProgressBar from "../../src/components/atoms/ProgressBar"
 import { render } from "@testing-library/react";
 
 describe("ProgressBar", () => {

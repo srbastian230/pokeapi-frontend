@@ -3,7 +3,7 @@ import { PokemonProvider } from "@providers/PokemonContext/PokemonProvider";
 import './index.css'
 
 import type { Metadata } from "next";
-import Header from "@/components/Header";
+import Header from "@/components/organism/Header";
 
 
 export const metadata: Metadata = {

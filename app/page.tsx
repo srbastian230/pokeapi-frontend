@@ -1,4 +1,4 @@
-import ListPokemonTemplate from "@/templates/ListPokemonTemplate";
+import ListPokemonTemplate from "@/components/templates/ListPokemonTemplate";
 import { Suspense } from "react";
 
 export default function Home() {

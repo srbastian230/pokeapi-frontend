@@ -3,9 +3,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import { PokemonContext } from "@/providers/PokemonContext";
 import { Pokemon } from "@/interfaces/Pokemon.interface";
-import Loader from "@/components/Loader";
+import Loader from "@/components/atoms/Loader";
 import Image from "next/image";
-import ProgressBar from "@/components/ProgressBar";
+import ProgressBar from "@/components/atoms/ProgressBar";
 
 export const PokemonDetailTemplate = ({ id }: { id: string }) => {
   const { getPokemonByID } = useContext(PokemonContext);

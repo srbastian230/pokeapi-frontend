@@ -1,7 +1,7 @@
 "use client";
 
-import { PokemonList } from "@/components/ListPokemon";
-import Pagination from "@/components/Pagination";
+import { PokemonList } from "@/components/organism/ListPokemon";
+import Pagination from "@/components/atoms/Pagination";
 import { PokemonContext } from "@/providers/PokemonContext";
 import { useContext, useEffect } from "react";
 
