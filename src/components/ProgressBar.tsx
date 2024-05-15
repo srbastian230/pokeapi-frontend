@@ -15,3 +15,5 @@ export const ProgressBar = (props: Props) => {
     </div>
   );
 };
+
+export default ProgressBar;

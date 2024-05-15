@@ -27,7 +27,7 @@ export const PokemonProvider = ({
     if (offset === null) return;
 
     const { data } = await axiosInstance.get<ResponseData<PokemonUrl>>(
-      `pokemon?limit=${pagination.sizePage}&offset=${offset}`,
+      `pokemon?limit=${pagination.sizePage}&offset=${offset}`
     );
 
     setPagination((p) => {

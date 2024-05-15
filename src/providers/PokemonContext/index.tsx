@@ -17,5 +17,5 @@ export const initialPokemonContextState: PokemonContextState = {
   },
 };
 export const PokemonContext = createContext<PokemonContextState>(
-  initialPokemonContextState,
+  initialPokemonContextState
 );

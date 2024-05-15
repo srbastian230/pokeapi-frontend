@@ -8,7 +8,7 @@ export interface AbilitiesEntity {
 
 export interface Cries {
   latest: string;
-  legacy?: null;
+  legacy?: string;
 }
 export interface GameIndicesEntity {
   game_index: number;
@@ -39,27 +39,27 @@ export interface PastAbilitiesEntity {
 }
 export interface DreamWorld {
   front_default: string;
-  front_female?: null;
+  front_female?: string | null;
 }
 
 export interface Other {
   dream_world: DreamWorld;
-  home: { [key: string]: string };
+  home: { [key: string]: string | null };
   "official-artwork": { [key: string]: string };
-  showdown: { [key: string]: string };
+  showdown: { [key: string]: string | null };
 }
 
 export interface Sprites {
   back_default: string;
-  back_female?: null;
+  back_female?: string | null;
   back_shiny: string;
-  back_shiny_female?: null;
+  back_shiny_female?: string | null;
   front_default: string;
-  front_female?: null;
+  front_female?: string | null;
   front_shiny: string;
-  front_shiny_female?: null;
+  front_shiny_female?: string | null;
   other: Other;
-  versions: { [key: string]: string };
+  versions?: { [key: string]: string };
 }
 
 export interface StatsEntity {
@@ -77,6 +77,7 @@ export interface Pokemon {
   abilities?: AbilitiesEntity[];
   base_experience: number;
   cries: Cries;
+  past_types?: string[];
   forms?: PokemonUrl[];
   game_indices?: GameIndicesEntity[];
   height: number;

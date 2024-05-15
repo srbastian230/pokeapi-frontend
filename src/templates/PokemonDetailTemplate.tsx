@@ -5,7 +5,7 @@ import { PokemonContext } from "@/providers/PokemonContext";
 import { Pokemon } from "@/interfaces/Pokemon.interface";
 import Loader from "@/components/Loader";
 import Image from "next/image";
-import { ProgressBar } from "@/components/ProgressBar";
+import ProgressBar from "@/components/ProgressBar";
 
 export const PokemonDetailTemplate = ({ id }: { id: string }) => {
   const { getPokemonByID } = useContext(PokemonContext);
