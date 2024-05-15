@@ -361,6 +361,8 @@ Styles of Pokemon Single Page
 }
 
 .number-pokemon {
+	text-align: center;
+	display: block;
 	font-size: 200px;
 	font-weight: 700;
 	color: var(--color-primary-hover);
@@ -424,12 +426,14 @@ Styles of Pokemon Single Page
 	display: flex;
 	gap: 50px;
 	align-items: center;
+	margin-top: 32px;
 }
 
 @media (max-width: 1200px)  {
 	.container-stats {
 		width: 100%;
 		flex-direction: column;
+		gap: 24px;
 	}
 }
 
