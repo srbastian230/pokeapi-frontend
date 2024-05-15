@@ -1,6 +1,5 @@
 import { PokemonUrl } from "./PokemonUrl.interface";
 
-
 export interface AbilitiesEntity {
   ability: PokemonUrl;
   is_hidden: boolean;
@@ -21,7 +20,7 @@ export interface VersionDetailsEntity {
 }
 export interface HeldItemsEntity {
   item: PokemonUrl;
-  version_details?: (VersionDetailsEntity)[] | null;
+  version_details?: VersionDetailsEntity[] | null;
 }
 
 export interface VersionGroupDetailsEntity {
@@ -31,11 +30,11 @@ export interface VersionGroupDetailsEntity {
 }
 export interface MovesEntity {
   move: PokemonUrl;
-  version_group_details?: (VersionGroupDetailsEntity)[] | null;
+  version_group_details?: VersionGroupDetailsEntity[] | null;
 }
 
 export interface PastAbilitiesEntity {
-  abilities?: (AbilitiesEntity)[] | null;
+  abilities?: AbilitiesEntity[] | null;
   generation: PokemonUrl;
 }
 export interface DreamWorld {
@@ -45,9 +44,9 @@ export interface DreamWorld {
 
 export interface Other {
   dream_world: DreamWorld;
-  home: {[key: string]: string};
-  'official-artwork': {[key: string]: string};
-  showdown: {[key: string]: string};
+  home: { [key: string]: string };
+  "official-artwork": { [key: string]: string };
+  showdown: { [key: string]: string };
 }
 
 export interface Sprites {
@@ -60,7 +59,7 @@ export interface Sprites {
   front_shiny: string;
   front_shiny_female?: null;
   other: Other;
-  versions: {[key: string]: string};
+  versions: { [key: string]: string };
 }
 
 export interface StatsEntity {

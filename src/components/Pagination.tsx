@@ -1,27 +1,24 @@
 "use client";
 
-import { PokemonContext } from '@/providers/PokemonContext';
-import { useSearchParams, useRouter } from 'next/navigation';
-import { useContext } from 'react';
-import ReactPaginate from 'react-paginate';
+import { PokemonContext } from "@/providers/PokemonContext";
+import { useSearchParams, useRouter } from "next/navigation";
+import { useContext } from "react";
+import ReactPaginate from "react-paginate";
 
 export const Pagination = () => {
-  const {
-    setOffset,
-    pagination,
-  } = useContext(PokemonContext);
+  const { setOffset, pagination } = useContext(PokemonContext);
 
   const router = useRouter();
   const pageCount = Math.ceil(pagination.totalItems / pagination.sizePage);
   const searchParams = useSearchParams();
-	const initialPage = searchParams.get('page') ?? '1';
+  const initialPage = searchParams.get("page") ?? "1";
 
   const handlePageClick = ({ selected }: { selected: number }) => {
-    const newOffset = (selected * pagination.sizePage);
+    const newOffset = selected * pagination.sizePage;
     setOffset(newOffset);
-    if (newOffset === 0) router.push('/');
+    if (newOffset === 0) router.push("/");
     else router.push(`/?page=${selected + 1}`);
-  }
+  };
 
   return (
     <ReactPaginate
@@ -44,7 +41,7 @@ export const Pagination = () => {
       containerClassName="pagination"
       activeClassName="active"
     />
-  )
-}
+  );
+};
 
 export default Pagination;

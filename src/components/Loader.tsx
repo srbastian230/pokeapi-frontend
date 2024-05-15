@@ -7,7 +7,7 @@ export const Loader = () => {
         <span className="animate-loader-400" />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Loader;
